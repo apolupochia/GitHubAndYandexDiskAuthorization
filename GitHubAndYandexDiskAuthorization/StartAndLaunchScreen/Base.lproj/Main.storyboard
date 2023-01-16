@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="GitHubAndYandexDiskAuthorization" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9ju-or-2Cc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="379.66666666666669"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RrT-Cn-JW1">
+                                <rect key="frame" x="0.0" y="438.66666666666674" width="393" height="413.33333333333326"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="9ju-or-2Cc" secondAttribute="bottom" id="FHF-Pq-xSk"/>
+                            <constraint firstAttribute="bottom" secondItem="RrT-Cn-JW1" secondAttribute="bottom" id="RVP-6F-0A2"/>
+                            <constraint firstItem="RrT-Cn-JW1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S0D-d7-ghb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RrT-Cn-JW1" secondAttribute="trailing" id="Uxe-sx-N1d"/>
+                            <constraint firstItem="9ju-or-2Cc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VK5-XI-zzd"/>
+                            <constraint firstItem="9ju-or-2Cc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jgK-sf-Cnu"/>
+                            <constraint firstItem="RrT-Cn-JW1" firstAttribute="top" secondItem="9ju-or-2Cc" secondAttribute="bottom" id="lVR-4n-w28"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ju-or-2Cc" secondAttribute="trailing" id="y3C-fJ-60p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gitLogo" destination="9ju-or-2Cc" id="fHN-f6-R1o"/>
+                        <outlet property="yandexLogo" destination="RrT-Cn-JW1" id="yzM-8h-XGq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
