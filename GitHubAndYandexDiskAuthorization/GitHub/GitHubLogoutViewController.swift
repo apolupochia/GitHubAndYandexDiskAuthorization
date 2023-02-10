@@ -19,7 +19,7 @@ final class GitHubLogoutViewController : UIViewController{
         super .viewDidLoad()
         
         setupViews()
-        guard let request = ApiManagerForGit.logOut() else { return }
+        guard let request = ApiManagerForGit().requestLogOut(urlString: GitInfo.logout_url.rawValue) else { return }
         webView.load(request)
         webView.navigationDelegate = self
     }

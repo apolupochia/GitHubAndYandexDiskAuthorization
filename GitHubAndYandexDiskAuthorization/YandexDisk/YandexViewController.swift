@@ -42,14 +42,23 @@ class YandexViewController: UIViewController {
         return button
     }()
 
-
+    let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
 
         setupViews()
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        updateData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -128,17 +137,28 @@ class YandexViewController: UIViewController {
             
         }
        
-        ApiManagerForYandex.loadDataAboutYandexDisk(key: token) { (files, networkError) in
+        ApiManagerForYandex.loadDataAboutYandexDisk(urlString :YandexInfo.urlDiskFiles.rawValue, key: token) { (informationAboutDownload) in
             
-            guard networkError == false else {
+            guard informationAboutDownload.dataError == false else {
                 DispatchQueue.main.async {
-                    self.present(AlertsError.alertError(), animated: true, completion: nil)
+                    self.present(AlertsError.alertError(title: "Error", message: "Connect to the network or update your app"), animated: true, completion: nil)
                 }
                 return
             }
-            guard let files = files else {
-                self.updateData()
+            
+            guard informationAboutDownload.networkError == false else {
+                DispatchQueue.main.async {
+                    self.present(AlertsError.alertError(title: "Network Error", message: "Connect to the network"), animated: true, completion: nil)
+                }
                 return
+            }
+            
+            guard informationAboutDownload.keyError == false else {
+                KeychainManagerForPerson.delete(service: YandexInfo.login.rawValue)
+                DispatchQueue.main.async {
+                    self.updateData()
+                }
+                return()
             }
             
             DispatchQueue.main.async { [weak self] in
@@ -147,9 +167,19 @@ class YandexViewController: UIViewController {
                 self?.logoutButton.isHidden = false
                 self?.backButton.isHidden = false
                 
-                self?.filesData = files
+                self?.refreshControl.endRefreshing()
+                self?.filesData = informationAboutDownload.repoModel
                 self?.tableView.reloadData()
             }
+            
+    
+            
+            
+            
+            
+            
+            
+            
         }
     }
     
@@ -179,7 +209,7 @@ extension YandexViewController : YandexAOuthViewControllerDelegate{
         updateData()
     }
     func networkErrorLoginIn(){
-        self.present(AlertsError.alertError(), animated: true, completion: nil)
+        self.present(AlertsError.alertError(title: "Network Error", message: "Connect to the network"), animated: true, completion: nil)
     }
 }
 
@@ -194,7 +224,7 @@ extension YandexViewController : YandexLogoutControllerDelegate{
     }
     
     func networkErrorLogout(){
-        self.present(AlertsError.alertError(), animated: true, completion: nil)
+        self.present(AlertsError.alertError(title: "Network Error", message: "Connect to the network"), animated: true, completion: nil)
         
     }
 }
@@ -226,13 +256,15 @@ extension YandexViewController : UITableViewDataSource{
             cell.imageCell.image = UIImage(systemName: "network")
             return cell
         }
-        ApiManagerForYandex.downloadingImagesFromUrl(urlString: urlString) { data in
-            guard let data = data else {
-                cell.imageCell.image = UIImage(systemName: "network")
+        ApiManagerForYandex.downloadingImagesFromUrl(urlString: urlString) { image in
+            guard let image = image else {
+                DispatchQueue.main.async {
+                    cell.imageCell.image = UIImage(systemName: "network")
+                }
                 return
             }
             DispatchQueue.main.async {
-                cell.imageCell.image = UIImage(data: data)
+                cell.imageCell.image = image
             }
         }
 

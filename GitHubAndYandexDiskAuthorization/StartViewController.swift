@@ -32,13 +32,17 @@ class StartViewController: UIViewController {
     @objc func tappedMeGitLogo(){
         let yandexViewController = GitHubViewController()
         yandexViewController.modalPresentationStyle = .overFullScreen
-        present(yandexViewController, animated: false, completion: nil)
+        DispatchQueue.main.async {
+            self.present(yandexViewController, animated: false, completion: nil)
+        }
     }
     
     @objc func tappedMeYandexLogo(){
         let yandexViewController = YandexViewController()
         yandexViewController.modalPresentationStyle = .overFullScreen
-        self.present(yandexViewController, animated: false, completion: nil)
+        DispatchQueue.main.async {
+            self.present(yandexViewController, animated: false, completion: nil)
+        }
     }
     
 

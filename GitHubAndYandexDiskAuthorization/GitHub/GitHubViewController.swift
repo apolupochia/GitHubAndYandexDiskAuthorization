@@ -44,8 +44,14 @@ class GitHubViewController: UIViewController {
 
 
 
+    let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -53,7 +59,9 @@ class GitHubViewController: UIViewController {
         setupViews()
     }
     
-  
+    @objc func refresh(_ sender: AnyObject) {
+        updateData()
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -127,36 +135,54 @@ class GitHubViewController: UIViewController {
     private func updateData(){
         
         guard  let token = KeychainManagerForPerson.loadDataFromKeyChain(service: GitInfo.login.rawValue) else {
-
+            DispatchQueue.main.async {
                 let requestTokenViewController = GitHubAOuthViewController()
-           //     requestTokenViewController.modalPresentationStyle = .fullScreen
+                //     requestTokenViewController.modalPresentationStyle = .fullScreen
                 requestTokenViewController.delegate = self
-                present(requestTokenViewController, animated: false, completion: nil)
+                self.present(requestTokenViewController, animated: false, completion: nil)
+            }
                 return
             }
         
-        ApiManagerForGit.loadDataAboutAllRepositories(urlString: "https://api.github.com/user/repos", key: token) { (repomod, networkError) in
+        ApiManagerForGit().loadDataAboutAllRepositories(urlString: GitInfo.repos_url.rawValue, key: token) { informationAboutDownload in
             
-            guard networkError == false else {
+            guard informationAboutDownload.dataError == false else {
                 DispatchQueue.main.async {
-                    self.present(AlertsError.alertError(), animated: true, completion: nil)
+                    self.present(AlertsError.alertError(title: "Error", message: "Connect to the network or update your app"), animated: true, completion: nil)
                 }
                 return
             }
             
-            guard let repomod = repomod else{
-                self.updateData()
+            
+            guard informationAboutDownload.networkError == false else {
+                DispatchQueue.main.async {
+                    self.present(AlertsError.alertError(title: "Network Error", message: "Connect to the network"), animated: true, completion: nil)
+                }
                 return
             }
-        
-            self.repoDate = repomod
+            
+            guard informationAboutDownload.keyError == false else {
+                KeychainManagerForPerson.delete(service: GitInfo.login.rawValue)
+                DispatchQueue.main.async {
+                    self.updateData()
+                }
+                return()
+            }
+            
+            guard let repoDate = informationAboutDownload.repoModel else {return}
+            self.repoDate = repoDate
+            
+            
+            
             
             DispatchQueue.main.async {
+                self.refreshControl.endRefreshing()
+                
                 self.loginIfNeed.isHidden = true
                 self.logoutButton.isHidden = false
-               
                 self.tableView.reloadData()
             }
+            
         }
     }
     
@@ -185,7 +211,7 @@ extension GitHubViewController : GitHubAOuthViewControllerDelegate{
         updateData()
     }
     func  networkErrorLoginIn(){
-        self.present(AlertsError.alertError(), animated: true, completion: nil)
+        self.present(AlertsError.alertError(title: "Network Error", message: "Connect to the network"), animated: true, completion: nil)
     }
 }
 
@@ -201,7 +227,7 @@ extension GitHubViewController : GitHubAOuthLogoutControllerDelegate{
     }
     
     func networkErrorLogout(){
-        self.present(AlertsError.alertError(), animated: true, completion: nil)
+        self.present(AlertsError.alertError(title: "Network Error", message: "Connect to the network"), animated: true, completion: nil)
     }
     
 
@@ -230,7 +256,7 @@ extension GitHubViewController : UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         repoDate?.count ?? 0
+         return repoDate?.count ?? 0
         
     }
     

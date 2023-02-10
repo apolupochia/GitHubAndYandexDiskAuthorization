@@ -20,7 +20,7 @@ final class GitHubAOuthViewController : UIViewController{
         super .viewDidLoad()
         
         setupViews()
-        guard let request = ApiManagerForGit.requestForGit() else { return }
+        guard let request = ApiManagerForGit().requestForGit(urlString: GitInfo.authorize_url.rawValue) else { return }
         webView.load(request)
         webView.navigationDelegate = self
     }
@@ -50,13 +50,20 @@ extension GitHubAOuthViewController : WKNavigationDelegate{
         }
         else {
             if let url = navigationAction.request.url{
-                    
-            ApiManagerForGit.loadTokenFromUrl(url: url) { param in
-                if param{
-                    self.delegate?.returnAndShow()
-                    self.dismiss(animated: true, completion: nil)
+                
+                ApiManagerForGit().takeTokenAndSave(url: url) { param in
+                    if param{
+                        self.delegate?.returnAndShow()
+                        self.dismiss(animated: true, completion: nil)
+                    }
                 }
-            }
+                    
+//                ApiManagerForGit.loadTokenFromUrl(url: url) { param in
+//                    if param{
+//                        self.delegate?.returnAndShow()
+//                        self.dismiss(animated: true, completion: nil)
+//                    }
+//                }
                     
         }
         decisionHandler(.allow)

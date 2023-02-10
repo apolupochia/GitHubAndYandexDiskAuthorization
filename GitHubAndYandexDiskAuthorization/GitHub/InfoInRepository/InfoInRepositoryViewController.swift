@@ -20,14 +20,24 @@ class InfoInRepositoryViewController: UIViewController {
         return button
     }()
     
+    let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        tableView.addSubview(refreshControl)
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
         setupViews()
 
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        updateData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -73,16 +83,35 @@ class InfoInRepositoryViewController: UIViewController {
     }
     
     func updateData(){
-        ApiManagerForGit.commitsInRepositories(urlString: ulrString) { (commitsModel, networkError) in
-            guard networkError == false else {
+        
+        ApiManagerForGit().takeCommitsFromAri(urlString: ulrString) { informationAboutDownload  in
+            
+            guard informationAboutDownload.dataError == false else {
                 DispatchQueue.main.async {
-                    self.present(AlertsError.alertError(), animated: true, completion: nil)
+                    self.present(AlertsError.alertError(title: "Error", message: "Connect to the network or update your app"), animated: true, completion: nil)
                 }
                 return
             }
-            guard let commitsModel = commitsModel else {return}
-            self.commitsData = commitsModel
+            
+            
+            guard informationAboutDownload.networkError == false else {
+                DispatchQueue.main.async {
+                    self.present(AlertsError.alertError(title: "Network Error", message: "Connect to the network"), animated: true, completion: nil)
+                }
+                return
+            }
+            
+            guard informationAboutDownload.decodeError == false else {
+                self.present(AlertsError.alertError(title: "Decode Error", message: "Restart the App"), animated: true, completion: nil)
+                return()
+            }
+            
+            
+            
+            
             DispatchQueue.main.async {
+                self.commitsData = informationAboutDownload.commitsModel
+                self.refreshControl.endRefreshing()
                 self.tableView.reloadData()
             }
         }
