@@ -14,6 +14,9 @@
 #### Your GitHub Repositories
 <img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/gitRepos.imageset/gitRepos.png" width="256"/>
 
+#### GitHub information of repository 
+<img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/gitInfInRep.imageset/gitInfInRep.png" width="256"/>
+
 #### Login in YandexDisk
 <img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/yandexDiskLogin.imageset/yandexDiskLogin.png" width="256"/>
 
