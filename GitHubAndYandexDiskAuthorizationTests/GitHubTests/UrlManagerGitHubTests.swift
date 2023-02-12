@@ -329,7 +329,7 @@ class UrlManagerGitHubTest: XCTestCase {
     
     func testRequestForGitString(){
         let urlString = "http://www.testableurl.com/"
-        let correctString = "\(urlString)?client_id=\(GitInfo.client_id.rawValue)&redirect_uri=\(GitInfo.redirect_uri.rawValue)&scope=user%20repo"
+        let correctString = "\(urlString)?client_id=\(GitInfo.clientId.rawValue)&redirect_uri=\(GitInfo.redirectUri.rawValue)&scope=user%20repo"
         let request = urlManager.requestForGit(urlString: urlString)
         XCTAssert((request?.url?.absoluteString ?? "") == correctString)
     }
@@ -341,7 +341,7 @@ class UrlManagerGitHubTest: XCTestCase {
     
     func testRequestLogOutString(){
         let urlString = "http://www.testableurl.com/"
-        let correctString = "\(urlString)?client_id=\(GitInfo.client_id.rawValue)&redirect_uri=\(GitInfo.redirect_url_logout.rawValue)&scope=user%20repo"
+        let correctString = "\(urlString)?client_id=\(GitInfo.clientId.rawValue)&redirect_uri=\(GitInfo.redirectUrlLogout.rawValue)&scope=user%20repo"
         let request = urlManager.requestLogOut(urlString: urlString)
         XCTAssert((request?.url?.absoluteString ?? "") == correctString)
     }
@@ -429,7 +429,7 @@ class ApiManagerUrlGitHubTest: XCTestCase {
             return
         }
 
-        let endUrl = "https://github.com/login/oauth/access_token?client_id=\(GitInfo.client_id.rawValue)&client_secret=\(GitInfo.client_secret.rawValue)&code=\(codeUrlToKey)&redirect_uri=\(GitInfo.redirect_uri.rawValue)"
+        let endUrl = "https://github.com/login/oauth/access_token?client_id=\(GitInfo.clientId.rawValue)&client_secret=\(GitInfo.clientSecret.rawValue)&code=\(codeUrlToKey)&redirect_uri=\(GitInfo.redirectUri.rawValue)"
 
         let request = urlManager.takeUrlForLoadToken(url: url)
         XCTAssert((urlManager.codeFromUrl ?? "") == codeUrlToKey)

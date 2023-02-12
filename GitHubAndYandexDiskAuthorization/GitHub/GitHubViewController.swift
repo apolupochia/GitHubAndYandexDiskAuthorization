@@ -144,7 +144,7 @@ class GitHubViewController: UIViewController {
                 return
             }
         
-        ApiManagerForGit().loadDataAboutAllRepositories(urlString: GitInfo.repos_url.rawValue, key: token) { informationAboutDownload in
+        ApiManagerForGit().loadDataAboutAllRepositories(urlString: GitInfo.reposUrl.rawValue, key: token) { informationAboutDownload in
             
             guard informationAboutDownload.dataError == false else {
                 DispatchQueue.main.async {

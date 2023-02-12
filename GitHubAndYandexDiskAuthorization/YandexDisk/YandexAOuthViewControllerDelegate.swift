@@ -20,7 +20,7 @@ final class YandexAOuthViewController : UIViewController{
         super .viewDidLoad()
       //  WKWebView.clean()  // clean cash and cooki
         setupViews()
-        guard let request = ApiManagerForYandex().requestForYandex(urlString: YandexInfo.authorize_url.rawValue) else { return }
+        guard let request = ApiManagerForYandex().requestForYandex(urlString: YandexInfo.authorizeUrl.rawValue) else { return }
         webView.load(request)
         webView.navigationDelegate = self
     }

@@ -20,7 +20,7 @@ final class YandexLogoutController : UIViewController{
         super .viewDidLoad()
         
         setupViews()
-        guard let request = ApiManagerForYandex().logOut(urlString: YandexInfo.logout_url.rawValue) else { return }
+        guard let request = ApiManagerForYandex().logOut(urlString: YandexInfo.logoutUrl.rawValue) else { return }
         webView.load(request)
         webView.navigationDelegate = self
     }

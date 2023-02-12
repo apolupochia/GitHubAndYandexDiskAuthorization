@@ -20,7 +20,7 @@ final class GitHubAOuthViewController : UIViewController{
         super .viewDidLoad()
         
         setupViews()
-        guard let request = ApiManagerForGit().requestForGit(urlString: GitInfo.authorize_url.rawValue) else { return }
+        guard let request = ApiManagerForGit().requestForGit(urlString: GitInfo.authorizeUrl.rawValue) else { return }
         webView.load(request)
         webView.navigationDelegate = self
     }

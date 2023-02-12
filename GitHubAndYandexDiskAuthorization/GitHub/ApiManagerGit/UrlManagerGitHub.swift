@@ -43,8 +43,8 @@ class ApiManagerForGit{
         guard var urlCompanents = URLComponents(string: urlString) else {return nil}
         
         urlCompanents.queryItems = [
-            URLQueryItem(name: "client_id", value: GitInfo.client_id.rawValue),
-            URLQueryItem(name: "redirect_uri", value: GitInfo.redirect_uri.rawValue),
+            URLQueryItem(name: "client_id", value: GitInfo.clientId.rawValue),
+            URLQueryItem(name: "redirect_uri", value: GitInfo.redirectUri.rawValue),
             URLQueryItem(name: "scope", value: GitInfo.scope.rawValue)
         ]
         
@@ -58,8 +58,8 @@ class ApiManagerForGit{
         
         urlCompanents.queryItems = [
         
-            URLQueryItem(name: "client_id", value: GitInfo.client_id.rawValue),
-            URLQueryItem(name: "redirect_uri", value: GitInfo.redirect_url_logout.rawValue),
+            URLQueryItem(name: "client_id", value: GitInfo.clientId.rawValue),
+            URLQueryItem(name: "redirect_uri", value: GitInfo.redirectUrlLogout.rawValue),
             URLQueryItem(name: "scope", value: GitInfo.scope.rawValue)
         ]
         
@@ -196,10 +196,10 @@ class ApiManagerUrlGitHub {
             guard var components = URLComponents(string: "https://github.com/login/oauth/access_token") else {return nil }
             
             components.queryItems = [
-                URLQueryItem(name: "client_id", value: GitInfo.client_id.rawValue),
-                URLQueryItem(name: "client_secret", value: GitInfo.client_secret.rawValue),
+                URLQueryItem(name: "client_id", value: GitInfo.clientId.rawValue),
+                URLQueryItem(name: "client_secret", value: GitInfo.clientSecret.rawValue),
                 URLQueryItem(name: "code", value: "\(code)"),
-                URLQueryItem(name: "redirect_uri", value: GitInfo.redirect_uri.rawValue)
+                URLQueryItem(name: "redirect_uri", value: GitInfo.redirectUri.rawValue)
             ]
             
             guard let url = components.url else {return nil}
