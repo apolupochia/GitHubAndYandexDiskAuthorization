@@ -2,7 +2,7 @@
 #### Change clientId and clientSecret (get it from you git app) or app won't work
 <img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/GithubPrivateData.imageset/GithubPrivateData.png" width="512"/>
 
-#### #### Change clientId and secretYandex (get it from you yandex app) or app won't work
+#### Change clientId and secretYandex (get it from you yandex app) or app won't work
 <img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/YandexPrivateData.imageset/YandexPrivateData.png" width="512"/>
 
 ### Main selection screen
