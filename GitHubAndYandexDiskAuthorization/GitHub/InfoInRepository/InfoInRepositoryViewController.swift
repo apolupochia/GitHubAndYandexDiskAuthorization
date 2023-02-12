@@ -25,7 +25,7 @@ class InfoInRepositoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.attributedTitle = NSAttributedString(string: "Updating")
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         tableView.addSubview(refreshControl)
         
@@ -84,7 +84,7 @@ class InfoInRepositoryViewController: UIViewController {
     
     func updateData(){
         
-        ApiManagerForGit().takeCommitsFromAri(urlString: ulrString) { informationAboutDownload  in
+        ApiManagerForGit().takeCommitsFromApi(urlString: ulrString) { informationAboutDownload  in
             
             guard informationAboutDownload.dataError == false else {
                 DispatchQueue.main.async {

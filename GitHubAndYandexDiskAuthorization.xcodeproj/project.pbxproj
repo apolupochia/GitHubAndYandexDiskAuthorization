@@ -34,10 +34,24 @@
 		D7244DBC2971EDAC00ADFD8E /* YandexDiskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7244DBB2971EDAC00ADFD8E /* YandexDiskInfo.swift */; };
 		D7244DBE2972E30400ADFD8E /* YandexLogoutControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7244DBD2972E30400ADFD8E /* YandexLogoutControllerDelegate.swift */; };
 		D7244DC02972EA6C00ADFD8E /* GitHubLogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7244DBF2972EA6C00ADFD8E /* GitHubLogoutViewController.swift */; };
+		D732D58B299696350026A3E0 /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D58A299696350026A3E0 /* HTTPClientTests.swift */; };
+		D732D5922997B8490026A3E0 /* UrlManagerGitHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D5912997B8490026A3E0 /* UrlManagerGitHubTests.swift */; };
+		D732D598299934690026A3E0 /* PasswordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D597299934690026A3E0 /* PasswordsTests.swift */; };
+		D732D59C299945050026A3E0 /* UrlManagerYandex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D732D59B299945050026A3E0 /* UrlManagerYandex.swift */; };
 		D7A13A25299659EB008F6249 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A13A24299659EB008F6249 /* HTTPClient.swift */; };
 		D7B5A9F1297308450050E4DE /* CleanCashAndCooki.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5A9F0297308450050E4DE /* CleanCashAndCooki.swift */; };
 		D7C3FCD22974333300357474 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C3FCD12974333300357474 /* Alerts.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D732D58C299696350026A3E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7126DBC2971C8020037DCBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7126DC32971C8020037DCBC;
+			remoteInfo = GitHubAndYandexDiskAuthorization;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D7126DC42971C8020037DCBC /* GitHubAndYandexDiskAuthorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubAndYandexDiskAuthorization.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +83,11 @@
 		D7244DBB2971EDAC00ADFD8E /* YandexDiskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexDiskInfo.swift; sourceTree = "<group>"; };
 		D7244DBD2972E30400ADFD8E /* YandexLogoutControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexLogoutControllerDelegate.swift; sourceTree = "<group>"; };
 		D7244DBF2972EA6C00ADFD8E /* GitHubLogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubLogoutViewController.swift; sourceTree = "<group>"; };
+		D732D588299696340026A3E0 /* GitHubAndYandexDiskAuthorizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubAndYandexDiskAuthorizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D732D58A299696350026A3E0 /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
+		D732D5912997B8490026A3E0 /* UrlManagerGitHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlManagerGitHubTests.swift; sourceTree = "<group>"; };
+		D732D597299934690026A3E0 /* PasswordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsTests.swift; sourceTree = "<group>"; };
+		D732D59B299945050026A3E0 /* UrlManagerYandex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlManagerYandex.swift; sourceTree = "<group>"; };
 		D7A13A24299659EB008F6249 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		D7B5A9F0297308450050E4DE /* CleanCashAndCooki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCashAndCooki.swift; sourceTree = "<group>"; };
 		D7C3FCD12974333300357474 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
@@ -82,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D732D585299696340026A3E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				D7126DC62971C8020037DCBC /* GitHubAndYandexDiskAuthorization */,
+				D732D589299696350026A3E0 /* GitHubAndYandexDiskAuthorizationTests */,
 				D7126DC52971C8020037DCBC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				D7126DC42971C8020037DCBC /* GitHubAndYandexDiskAuthorization.app */,
+				D732D588299696340026A3E0 /* GitHubAndYandexDiskAuthorizationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,6 +236,33 @@
 			path = YandexCell;
 			sourceTree = "<group>";
 		};
+		D732D589299696350026A3E0 /* GitHubAndYandexDiskAuthorizationTests */ = {
+			isa = PBXGroup;
+			children = (
+				D732D59A2999423E0026A3E0 /* YandexTests */,
+				D732D5992999422B0026A3E0 /* GitHubTests */,
+				D732D58A299696350026A3E0 /* HTTPClientTests.swift */,
+				D732D597299934690026A3E0 /* PasswordsTests.swift */,
+			);
+			path = GitHubAndYandexDiskAuthorizationTests;
+			sourceTree = "<group>";
+		};
+		D732D5992999422B0026A3E0 /* GitHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				D732D5912997B8490026A3E0 /* UrlManagerGitHubTests.swift */,
+			);
+			path = GitHubTests;
+			sourceTree = "<group>";
+		};
+		D732D59A2999423E0026A3E0 /* YandexTests */ = {
+			isa = PBXGroup;
+			children = (
+				D732D59B299945050026A3E0 /* UrlManagerYandex.swift */,
+			);
+			path = YandexTests;
+			sourceTree = "<group>";
+		};
 		D7A13A22299659B6008F6249 /* ApiManagerGit */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +342,24 @@
 			productReference = D7126DC42971C8020037DCBC /* GitHubAndYandexDiskAuthorization.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D732D587299696340026A3E0 /* GitHubAndYandexDiskAuthorizationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D732D590299696350026A3E0 /* Build configuration list for PBXNativeTarget "GitHubAndYandexDiskAuthorizationTests" */;
+			buildPhases = (
+				D732D584299696340026A3E0 /* Sources */,
+				D732D585299696340026A3E0 /* Frameworks */,
+				D732D586299696340026A3E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D732D58D299696350026A3E0 /* PBXTargetDependency */,
+			);
+			name = GitHubAndYandexDiskAuthorizationTests;
+			productName = GitHubAndYandexDiskAuthorizationTests;
+			productReference = D732D588299696340026A3E0 /* GitHubAndYandexDiskAuthorizationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -299,6 +372,10 @@
 				TargetAttributes = {
 					D7126DC32971C8020037DCBC = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					D732D587299696340026A3E0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D7126DC32971C8020037DCBC;
 					};
 				};
 			};
@@ -316,6 +393,7 @@
 			projectRoot = "";
 			targets = (
 				D7126DC32971C8020037DCBC /* GitHubAndYandexDiskAuthorization */,
+				D732D587299696340026A3E0 /* GitHubAndYandexDiskAuthorizationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -331,6 +409,13 @@
 				D7244DB82971ED7200ADFD8E /* YandexMainTableViewCell.xib in Resources */,
 				D7126DCF2971C8020037DCBC /* Main.storyboard in Resources */,
 				D7244D9F2971EAC800ADFD8E /* GitHubMainTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D732D586299696340026A3E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +453,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D732D584299696340026A3E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D732D59C299945050026A3E0 /* UrlManagerYandex.swift in Sources */,
+				D732D5922997B8490026A3E0 /* UrlManagerGitHubTests.swift in Sources */,
+				D732D58B299696350026A3E0 /* HTTPClientTests.swift in Sources */,
+				D732D598299934690026A3E0 /* PasswordsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D732D58D299696350026A3E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7126DC32971C8020037DCBC /* GitHubAndYandexDiskAuthorization */;
+			targetProxy = D732D58C299696350026A3E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D7126DCD2971C8020037DCBC /* Main.storyboard */ = {
@@ -560,6 +664,50 @@
 			};
 			name = Release;
 		};
+		D732D58E299696350026A3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CPAN57W2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.GitHubAndYandexDiskAuthorizationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubAndYandexDiskAuthorization.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GitHubAndYandexDiskAuthorization";
+			};
+			name = Debug;
+		};
+		D732D58F299696350026A3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CPAN57W2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.GitHubAndYandexDiskAuthorizationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubAndYandexDiskAuthorization.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GitHubAndYandexDiskAuthorization";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,6 +725,15 @@
 			buildConfigurations = (
 				D7126DD92971C8060037DCBC /* Debug */,
 				D7126DDA2971C8060037DCBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D732D590299696350026A3E0 /* Build configuration list for PBXNativeTarget "GitHubAndYandexDiskAuthorizationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D732D58E299696350026A3E0 /* Debug */,
+				D732D58F299696350026A3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

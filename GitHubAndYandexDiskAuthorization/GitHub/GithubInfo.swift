@@ -11,13 +11,13 @@ enum GitInfo : String{
     case repos_url =  "https://api.github.com/user/repos"
     case authorize_url = "https://github.com/login/oauth/authorize"
     case redirect_uri = "it.iacopo.github://authentication"
+    case redirect_url_logout = "https://github.com"
     case scope = "user repo"
     case logoutCallbackUrl = "ru.kts.oauth://github.com/logout_callback"
     case logout_url = "https://github.com/logout"
-
+    
     case fileCellIdentifireGitMain = "FileTableViewCellGitMain"
     case fileCellIdentifireGitInfInRepo = "FileTableViewCellGitInfInRepo"
 }
-
 
 

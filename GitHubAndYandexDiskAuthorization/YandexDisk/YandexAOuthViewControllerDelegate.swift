@@ -52,7 +52,7 @@ extension YandexAOuthViewController : WKNavigationDelegate{
                 let token = components.queryItems?.first(where: {$0.name == "access_token"})?.value
 
                 if let token = token {
-                    KeychainManagerForPerson.saveDataToKeyChain(service: YandexInfo.login.rawValue, password: token)
+                    KeychainManagerForPerson().saveDataToKeyChain(login: YandexInfo.login.rawValue, password: token)
                     delegate?.returnAndShow()
                     self.dismiss(animated: true, completion: nil)
                 }

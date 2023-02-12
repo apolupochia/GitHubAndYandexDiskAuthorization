@@ -3,21 +3,43 @@
 import Foundation
 
 class KeychainManagerForPerson{
-    static func saveDataToKeyChain(service : String, password: String){
+    
+    var error = ""
+    
+     func saveDataToKeyChain(login : String, password: String){
+         
+         guard login != "", password != "" else {
+             error = "empty login and empty password"
+             return
+         }
+         
+         guard login != "" else {
+             error = "empty login"
+             return
+         }
+         
+         guard password != "" else {
+             error = "empty password"
+             return
+         }
         
         do {
-            try KeychainManager.save(service: service, password: password.data(using: .utf8) ?? Data())
+            try KeychainManager.save(login: login, password: password.data(using: .utf8) ?? Data())
         } catch {
             print(error)
         }
     }
     
     
-    static func loadDataFromKeyChain(service : String) -> String?{
-
+    func loadDataFromKeyChain(login : String) -> String?{
+        error = ""
+        guard login != "" else {
+            error = "empty login"
+            return nil
+        }
         
-        guard let data = KeychainManager.get(service: service) else {
-            print("failed to get")
+        guard let data = KeychainManager.get(login: login) else {
+            error = "wrong login / this request without response"
             return nil
         }
         
@@ -28,8 +50,13 @@ class KeychainManagerForPerson{
     }
     
     
-    static func delete(service : String){
-        KeychainManager.delete(service: service)
+     func delete(login : String){
+         error = ""
+         guard login != "" else {
+             error = "empty login"
+             return
+         }
+        KeychainManager.delete(login: login)
     
     }
     
@@ -45,12 +72,12 @@ class KeychainManager{
         case unknown(OSStatus)
     }
     
-    static func save(service : String, password : Data) throws{
+    static func save(login : String, password : Data) throws{
         
         
         let query : [String : AnyObject] = [
             kSecClass as String : kSecClassGenericPassword,
-            kSecAttrService as String : service as AnyObject,
+            kSecAttrService as String : login as AnyObject,
             kSecValueData as String : password as AnyObject
         ]
         
@@ -67,11 +94,11 @@ class KeychainManager{
         }
     }
     
-    static func get(service : String)  -> Data?{
+    static func get(login : String)  -> Data?{
         
         let query : [String : AnyObject] = [
             kSecClass as String : kSecClassGenericPassword,
-            kSecAttrService as String : service as AnyObject,
+            kSecAttrService as String : login as AnyObject,
          //   kSecAttrAccount as String :account as AnyObject,
             kSecReturnData as String : kCFBooleanTrue,
             kSecMatchLimit as String : kSecMatchLimitOne
@@ -86,11 +113,11 @@ class KeychainManager{
     }
     
     
-    static func delete(service : String){
+    static func delete(login : String){
         
         let query : [String : AnyObject] = [
             kSecClass as String : kSecClassGenericPassword,
-            kSecAttrService as String : service as AnyObject,
+            kSecAttrService as String : login as AnyObject,
         ]
         
         SecItemDelete(query as CFDictionary)

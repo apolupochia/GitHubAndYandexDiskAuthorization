@@ -9,13 +9,36 @@ struct InformationAboutDownloadYandex{
     let networkError : Bool
     let keyError : Bool
     let dataError : Bool
+    let decodeError : Bool
+    let error : Bool
+    
+    init(repoModel : DiskResponse? = nil,
+         networkError : Bool = false,
+         keyError : Bool = false,
+         dataError : Bool = false,
+         decodeError : Bool = false,
+         error : Bool = false )
+    {
+        self.repoModel = repoModel
+        self.networkError = networkError
+        self.keyError = keyError
+        self.dataError = dataError
+        self.decodeError = decodeError
+        self.error = error
+    }
 }
 
 
 
  class ApiManagerForYandex {
+     
+     private let session: URLSessionProtocol
+     init(session: URLSessionProtocol = URLSession.shared) {
+         self.session = session
+     }
     
      func requestForYandex(urlString : String) -> URLRequest?{
+         guard let _ = URL(string: urlString) else { return nil }
         
         guard var urlCompanents = URLComponents(string: urlString) else {return nil}
 
@@ -30,55 +53,74 @@ struct InformationAboutDownloadYandex{
     }
     
     func logOut(urlString : String) -> URLRequest?{
-    
-        guard let urlCompanents = URLComponents(string: urlString) else {return nil}
-
-        guard let url = urlCompanents.url else { return nil }
+        guard let url = URL(string: urlString) else { return nil }
         return URLRequest(url: url)
     
     }
     
     
-    static func loadDataAboutYandexDisk(urlString : String, key: String, responce: @escaping (InformationAboutDownloadYandex) -> Void) {
-        
+    func loadDataAboutYandexDisk(urlString : String, key: String, completion: @escaping (InformationAboutDownloadYandex) -> Void) {
+        guard let _ = URL(string: urlString) else { return }
 
         guard let request = ApiManagerUrlYandex().takeRequestForLoadData(urlString: urlString, key: key) else {return}
         
-        HTTPClient().get(request: request) { data, response, error in
+        HTTPClient(session: session).get(request: request) { data, response, error in
             
             guard (response as? HTTPURLResponse)?.statusCode != nil else {
-                responce(InformationAboutDownloadYandex(repoModel: nil, networkError: true, keyError: false, dataError: false))
+                completion(InformationAboutDownloadYandex( networkError: true))
+                return
+            }
+            
+            guard  error == nil else {
+                completion(InformationAboutDownloadYandex(error : true))
                 return
             }
             
             guard  let data = data else {
-                responce(InformationAboutDownloadYandex(repoModel: nil, networkError: false, keyError: false, dataError: true))
+                completion(InformationAboutDownloadYandex(dataError: true))
                 return
             }
             
             guard let newFiles = try? JSONDecoder().decode(DiskResponse.self, from: data) else { 
-                responce(InformationAboutDownloadYandex(repoModel: nil, networkError: false, keyError: true, dataError: false))
+                completion(InformationAboutDownloadYandex( keyError: true , decodeError: true))
                 return
             }
             
-            responce(InformationAboutDownloadYandex(repoModel: newFiles, networkError: false, keyError: false, dataError: false))
+            completion(InformationAboutDownloadYandex(repoModel: newFiles))
         }
         
         
         
     }
     
-    static func downloadingImagesFromUrl(urlString : String, responce: @escaping (UIImage?) -> Void) {
-       
+    func downloadingImagesFromUrl(urlString : String, completion: @escaping (UIImage?) -> Void) {
+     //   print(urlString)
+        guard let _ = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
         guard let request = ApiManagerUrlYandex().takeRequestForDownloadImages(urlString: urlString) else {return}
   
-        HTTPClient().get(request: request) { data, response, error in
+        HTTPClient(session: session).get(request: request) { data, response, error in
+            
+//            guard (response as? HTTPURLResponse)?.statusCode != nil else {
+//                completion(nil)
+//                return
+//            }
+//            guard  error == nil else {
+//                completion(nil)
+//                return
+//            }
+            
             guard let data = data else {
-                responce(nil)
+                completion(nil)
                 return
             }
-            let image = UIImage(data: data)
-            responce(image)
+            guard let image = UIImage(data: data) else {
+                completion(UIImage(named: "YandexDiskLogo")!)
+                return
+            }
+            completion(image)
         }
     }
     
@@ -90,6 +132,7 @@ struct InformationAboutDownloadYandex{
 class ApiManagerUrlYandex {
     
     func takeRequestForLoadData(urlString : String, key : String) -> URLRequest?{
+        guard  let _ = URL(string: urlString) else { return nil }
         var components = URLComponents(string: urlString)
         components?.queryItems = [URLQueryItem(name: "media_type", value: "image")]
 
@@ -104,12 +147,9 @@ class ApiManagerUrlYandex {
     }
     
     func takeRequestForDownloadImages(urlString : String) -> URLRequest?{
-        guard  let url = URL(string: (urlString)) else {
-            return nil
-        }
-        let request = URLRequest(url: url)
-        
-        return request
+        guard  let url = URL(string: urlString) else { return nil }
+
+        return URLRequest(url: url)
     }
     
 }

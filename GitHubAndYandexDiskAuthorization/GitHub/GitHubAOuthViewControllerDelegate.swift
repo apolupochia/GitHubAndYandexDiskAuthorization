@@ -51,7 +51,7 @@ extension GitHubAOuthViewController : WKNavigationDelegate{
         else {
             if let url = navigationAction.request.url{
                 
-                ApiManagerForGit().takeTokenAndSave(url: url) { param in
+                ApiManagerForGit().takeTokenAndSave(url: url, login: GitInfo.login.rawValue) { param in
                     if param{
                         self.delegate?.returnAndShow()
                         self.dismiss(animated: true, completion: nil)

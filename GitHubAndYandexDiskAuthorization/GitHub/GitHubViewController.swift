@@ -49,7 +49,7 @@ class GitHubViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.attributedTitle = NSAttributedString(string: "Updating")
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         tableView.addSubview(refreshControl)
 
@@ -134,7 +134,7 @@ class GitHubViewController: UIViewController {
 
     private func updateData(){
         
-        guard  let token = KeychainManagerForPerson.loadDataFromKeyChain(service: GitInfo.login.rawValue) else {
+        guard  let token = KeychainManagerForPerson().loadDataFromKeyChain(login: GitInfo.login.rawValue) else {
             DispatchQueue.main.async {
                 let requestTokenViewController = GitHubAOuthViewController()
                 //     requestTokenViewController.modalPresentationStyle = .fullScreen
@@ -153,6 +153,12 @@ class GitHubViewController: UIViewController {
                 return
             }
             
+            guard informationAboutDownload.error == false else {
+                DispatchQueue.main.async {
+                    self.present(AlertsError.alertError(title: "Error", message: "Update your app"), animated: true, completion: nil)
+                }
+                return
+            }
             
             guard informationAboutDownload.networkError == false else {
                 DispatchQueue.main.async {
@@ -162,7 +168,7 @@ class GitHubViewController: UIViewController {
             }
             
             guard informationAboutDownload.keyError == false else {
-                KeychainManagerForPerson.delete(service: GitInfo.login.rawValue)
+                KeychainManagerForPerson().delete(login: GitInfo.login.rawValue)
                 DispatchQueue.main.async {
                     self.updateData()
                 }
@@ -217,7 +223,7 @@ extension GitHubViewController : GitHubAOuthViewControllerDelegate{
 
 extension GitHubViewController : GitHubAOuthLogoutControllerDelegate{
     func logout(){
-        KeychainManager.delete(service: GitInfo.login.rawValue)
+        KeychainManager.delete(login: GitInfo.login.rawValue)
         loginIfNeed.isHidden = false
         logoutButton.isHidden = true
         

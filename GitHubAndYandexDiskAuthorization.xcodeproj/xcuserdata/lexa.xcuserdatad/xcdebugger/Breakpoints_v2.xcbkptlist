@@ -196,5 +196,785 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A2A2F85-3CB1-4AEF-9709-2F7B6E9D97D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "remakeUrlToTokenAndSave(tokenComponents:login:responce:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0047B1E8-0F00-4B39-8148-F6C41B9849A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "remakeUrlToTokenAndSave(tokenComponents:login:responce:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "738E2569-A8F4-4E4E-A7E9-0307EB3A372C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "remakeUrlToTokenAndSave(tokenComponents:login:responce:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3C77E6D-27E9-44C8-94A5-0F04B1C63E51"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "remakeUrlToTokenAndSave(tokenComponents:login:responce:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DFA5F72-4EC4-4F21-8336-23BDAF4C58BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorizationTests/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "370"
+            endingLineNumber = "370"
+            landmarkName = "testTakeTokenAndSaveRightUrl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7DFA5F72-4EC4-4F21-8336-23BDAF4C58BA - 29256e1b5ed65a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorizationTests.UrlManagerGitHubTest.testTakeTokenAndSaveRightUrl() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "366"
+                  endingLineNumber = "366"
+                  offsetFromSymbolStart = "233">
+               </Location>
+               <Location
+                  uuid = "7DFA5F72-4EC4-4F21-8336-23BDAF4C58BA - b2b92ff6299b64f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in GitHubAndYandexDiskAuthorizationTests.UrlManagerGitHubTest.testTakeTokenAndSaveRightUrl() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "367"
+                  endingLineNumber = "367"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  uuid = "7DFA5F72-4EC4-4F21-8336-23BDAF4C58BA - 29256e1b5ed652a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorizationTests.UrlManagerGitHubTest.testTakeTokenAndSaveRightUrl() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "370"
+                  endingLineNumber = "370"
+                  offsetFromSymbolStart = "281">
+               </Location>
+               <Location
+                  uuid = "7DFA5F72-4EC4-4F21-8336-23BDAF4C58BA - b2b92ff6299b647f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in GitHubAndYandexDiskAuthorizationTests.UrlManagerGitHubTest.testTakeTokenAndSaveRightUrl() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "371"
+                  endingLineNumber = "371"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D527ACD-7DB6-4ADA-AD11-9607C529FF75"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "takeTokenAndSave(url:login:answerAboutSaving:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39C25EF1-FC69-47DD-8647-129E17E80D55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "takeTokenAndSave(url:login:answerAboutSaving:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C79F15ED-649A-4A41-BD41-1B813A58C010"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "takeTokenAndSave(url:login:answerAboutSaving:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CE241C9-9952-4209-BEE3-23C42FC0A16B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "takeTokenAndSave(url:login:answerAboutSaving:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3CE241C9-9952-4209-BEE3-23C42FC0A16B - d3bbd2249e5cf78c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GitHubAndYandexDiskAuthorization.ApiManagerForGit.takeTokenAndSave(url: Foundation.URL, login: Swift.String, answerAboutSaving: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorization"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "654">
+               </Location>
+               <Location
+                  uuid = "3CE241C9-9952-4209-BEE3-23C42FC0A16B - f35a9f6528ae9909"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GitHubAndYandexDiskAuthorization.ApiManagerForGit.takeTokenAndSave(url: Foundation.URL, login: Swift.String, answerAboutSaving: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorization"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "51">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B67EBF2C-6E63-4481-9CA5-5C3D6B7313CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "takeTokenAndSave(url:login:answerAboutSaving:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0164E2BE-22A4-4B15-89E4-5F89446946AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "takeTokenAndSave(url:login:answerAboutSaving:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0164E2BE-22A4-4B15-89E4-5F89446946AC - 3e5fa9dedbee5fba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorization.ApiManagerForGit.takeTokenAndSave(url: Foundation.URL, login: Swift.String, answerAboutSaving: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorization"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "0164E2BE-22A4-4B15-89E4-5F89446946AC - d3bbd2249e5cf7d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GitHubAndYandexDiskAuthorization.ApiManagerForGit.takeTokenAndSave(url: Foundation.URL, login: Swift.String, answerAboutSaving: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorization"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD06A309-ECF6-4A19-B436-1FB3B1B45BDA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "takeTokenAndSave(url:login:answerAboutSaving:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AD06A309-ECF6-4A19-B436-1FB3B1B45BDA - 3e5fa9dedbee5fba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorization.ApiManagerForGit.takeTokenAndSave(url: Foundation.URL, login: Swift.String, answerAboutSaving: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorization"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "372">
+               </Location>
+               <Location
+                  uuid = "AD06A309-ECF6-4A19-B436-1FB3B1B45BDA - d3bbd2249e5cf7d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GitHubAndYandexDiskAuthorization.ApiManagerForGit.takeTokenAndSave(url: Foundation.URL, login: Swift.String, answerAboutSaving: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorization"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8650E42D-051A-4370-98B6-571F5DDB91BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/GitHub/ApiManagerGit/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "takeTokenAndSave(url:login:answerAboutSaving:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59F95414-2DE2-490A-ABC7-978D29EE2A8C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorizationTests/UrlManagerGitHub.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "379"
+            endingLineNumber = "379"
+            landmarkName = "testRemakeUrlToTokenAndSavRightString()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "59F95414-2DE2-490A-ABC7-978D29EE2A8C - fc719a7618681687"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorizationTests.UrlManagerGitHubTest.testRemakeUrlToTokenAndSavRightString() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "379"
+                  endingLineNumber = "379"
+                  offsetFromSymbolStart = "141">
+               </Location>
+               <Location
+                  uuid = "59F95414-2DE2-490A-ABC7-978D29EE2A8C - d54ac282170ed2fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in GitHubAndYandexDiskAuthorizationTests.UrlManagerGitHubTest.testRemakeUrlToTokenAndSavRightString() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/UrlManagerGitHub.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "380"
+                  endingLineNumber = "380"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A9F1168-EC5F-4F5B-9E98-0DF73844E042"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "ApiManagerForYandexTests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C924133-2BB4-4A0D-8ED0-ABB36E33A3C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "testDownloadingImagesFromUrlWithRightData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C9D5FF9-7E5A-47A0-95E3-ACD8FF61BC3B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
+            landmarkName = "testDownloadingImagesFromUrlWithRightData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1C9D5FF9-7E5A-47A0-95E3-ACD8FF61BC3B - 68cbc0985066e82f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorizationTests.ApiManagerForYandexTests.testDownloadingImagesFromUrlWithRightData() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "213"
+                  endingLineNumber = "213"
+                  offsetFromSymbolStart = "101">
+               </Location>
+               <Location
+                  uuid = "1C9D5FF9-7E5A-47A0-95E3-ACD8FF61BC3B - 68cbc0985066e82f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorizationTests.ApiManagerForYandexTests.testDownloadingImagesFromUrlWithRightData() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "213"
+                  endingLineNumber = "213"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A5F9605-1A8C-4E9C-BFC6-41ACE833CB50"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "testDownloadingImagesFromUrlWithRightData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3A5F9605-1A8C-4E9C-BFC6-41ACE833CB50 - 68cbc0985066e9cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorizationTests.ApiManagerForYandexTests.testDownloadingImagesFromUrlWithRightData() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "591">
+               </Location>
+               <Location
+                  uuid = "3A5F9605-1A8C-4E9C-BFC6-41ACE833CB50 - 89769579b39ff813"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in GitHubAndYandexDiskAuthorizationTests.ApiManagerForYandexTests.testDownloadingImagesFromUrlWithRightData() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "217"
+                  endingLineNumber = "217"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "3A5F9605-1A8C-4E9C-BFC6-41ACE833CB50 - 68cbc0985066e9cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorizationTests.ApiManagerForYandexTests.testDownloadingImagesFromUrlWithRightData() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "363">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA075DE7-F695-40D3-84D6-7BBD8977EE52"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "testDownloadingImagesFromUrlWithRightData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EA075DE7-F695-40D3-84D6-7BBD8977EE52 - 68cbc0985066e9cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorizationTests.ApiManagerForYandexTests.testDownloadingImagesFromUrlWithRightData() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "591">
+               </Location>
+               <Location
+                  uuid = "EA075DE7-F695-40D3-84D6-7BBD8977EE52 - 89769579b39ff813"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in GitHubAndYandexDiskAuthorizationTests.ApiManagerForYandexTests.testDownloadingImagesFromUrlWithRightData() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "217"
+                  endingLineNumber = "217"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  uuid = "EA075DE7-F695-40D3-84D6-7BBD8977EE52 - 68cbc0985066e9cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GitHubAndYandexDiskAuthorizationTests.ApiManagerForYandexTests.testDownloadingImagesFromUrlWithRightData() -&gt; ()"
+                  moduleName = "GitHubAndYandexDiskAuthorizationTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lexa/Desktop/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorization/GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "363">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "869562FD-4991-4159-82F6-87D758C17995"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "testDownloadingImagesFromUrlWithRightData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8AD7E3F4-4829-4414-8C8E-CB548A6B326D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorizationTests/YandexTests/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "testDownloadingImagesFromUrlWithRightData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E18F007E-46E4-4089-B0B8-EC3B9F8827E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/YandexDisk/ApiManagerYandex/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "downloadingImagesFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5DC7A7F-5E75-4EF4-B114-65D82664B7C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/YandexDisk/ApiManagerYandex/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "downloadingImagesFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E1F1C08-6793-4682-AEFF-295FAEDC39B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/YandexDisk/ApiManagerYandex/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "downloadingImagesFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E944C1E3-1D07-420A-874E-CD878474D646"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/YandexDisk/ApiManagerYandex/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "downloadingImagesFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F12BB918-360A-4F3B-B2C3-70DB0265E0CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/YandexDisk/ApiManagerYandex/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "downloadingImagesFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DA26B1D-7C2D-407F-AC74-D8A986F6A27A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/YandexDisk/ApiManagerYandex/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "downloadingImagesFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3887A18E-12E5-4E26-AD76-D9B870B5E8D3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/YandexDisk/ApiManagerYandex/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "downloadingImagesFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D30CBD07-BF76-4F0D-BCB2-A5EF317C5C07"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GitHubAndYandexDiskAuthorization/YandexDisk/ApiManagerYandex/UrlManagerYandex.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "downloadingImagesFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

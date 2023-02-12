@@ -47,7 +47,7 @@ class YandexViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.attributedTitle = NSAttributedString(string: "Updating")
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         tableView.addSubview(refreshControl)
         
@@ -127,7 +127,7 @@ class YandexViewController: UIViewController {
     }
     
     private func updateData(){
-        guard  let token = KeychainManagerForPerson.loadDataFromKeyChain(service: YandexInfo.login.rawValue) else {
+        guard  let token = KeychainManagerForPerson().loadDataFromKeyChain(login: YandexInfo.login.rawValue) else {
 
             let requestTokenViewController = YandexAOuthViewController()
         //    requestTokenViewController.modalPresentationStyle = .fullScreen
@@ -137,7 +137,7 @@ class YandexViewController: UIViewController {
             
         }
        
-        ApiManagerForYandex.loadDataAboutYandexDisk(urlString :YandexInfo.urlDiskFiles.rawValue, key: token) { (informationAboutDownload) in
+        ApiManagerForYandex().loadDataAboutYandexDisk(urlString :YandexInfo.urlDiskFiles.rawValue, key: token) { (informationAboutDownload) in
             
             guard informationAboutDownload.dataError == false else {
                 DispatchQueue.main.async {
@@ -154,7 +154,7 @@ class YandexViewController: UIViewController {
             }
             
             guard informationAboutDownload.keyError == false else {
-                KeychainManagerForPerson.delete(service: YandexInfo.login.rawValue)
+                KeychainManagerForPerson().delete(login: YandexInfo.login.rawValue)
                 DispatchQueue.main.async {
                     self.updateData()
                 }
@@ -215,7 +215,7 @@ extension YandexViewController : YandexAOuthViewControllerDelegate{
 
 extension YandexViewController : YandexLogoutControllerDelegate{
     func logout(){
-        KeychainManagerForPerson.delete(service: YandexInfo.login.rawValue)
+        KeychainManagerForPerson().delete(login: YandexInfo.login.rawValue)
         loginIfNeed.isHidden = false
         logoutButton.isHidden = true
         
@@ -256,7 +256,7 @@ extension YandexViewController : UITableViewDataSource{
             cell.imageCell.image = UIImage(systemName: "network")
             return cell
         }
-        ApiManagerForYandex.downloadingImagesFromUrl(urlString: urlString) { image in
+        ApiManagerForYandex().downloadingImagesFromUrl(urlString: urlString) { image in
             guard let image = image else {
                 DispatchQueue.main.async {
                     cell.imageCell.image = UIImage(systemName: "network")

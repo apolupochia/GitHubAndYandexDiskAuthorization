@@ -58,12 +58,14 @@ class MockURLSession: URLSessionProtocol {
     private(set) var url: URL?
 
     var returnData: Data?
+    var response :  URLResponse?
+    var error : Error?
+    
     var dataTask = MockURLSessionDataTask()
 
     func dataTask(with request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTaskProtocol {
         url = request.url
-        completion(returnData, nil, nil)
-
+        completion(returnData, response, error)
         return dataTask
     }
 }
