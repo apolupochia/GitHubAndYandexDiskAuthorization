@@ -1,9 +1,9 @@
 # GitHub and Yandex Disk oauth authorization
 #### Change clientId and clientSecret (get it from you git app) or app won't work
-<img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/GithubPrivateData.imageset/GithubPrivateData.png" width="128"/>
+<img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/GithubPrivateData.imageset/GithubPrivateData.png" width="256"/>
 
 #### #### Change clientId and secretYandex (get it from you yandex app) or app won't work
-<img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/YandexPrivateData.imageset/YandexPrivateData.png" width="128"/>
+<img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/YandexPrivateData.imageset/YandexPrivateData.png" width="256"/>
 
 ### Main selection screen
 <img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/mainScreen.imageset/mainScreen.png" width="128"/>
