@@ -1,2 +1,2 @@
 # GitHub and Yandex Disk oauth authorization
-![Screenshot] (GitHubLogo.png)
+![GitHubLogo](./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/GitHubLogo.imageset/GitHubLogo.png)
