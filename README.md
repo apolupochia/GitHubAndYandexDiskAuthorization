@@ -1,4 +1,12 @@
 # GitHub and Yandex Disk oauth authorization
+# JokesSocial-app
+
+## Технологии и инструменты
+
+- [Swift]()
+- [UIkit]()
+- [﻿Rest API]()
+
 #### Change clientId and clientSecret (get it from you git app) or app won't work
 <img src="./GitHubAndYandexDiskAuthorization/SystemFiles/Assets.xcassets/GithubPrivateData.imageset/GithubPrivateData.png" width="512"/>
 
