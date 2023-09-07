@@ -1,5 +1,4 @@
 # GitHub and Yandex Disk oauth authorization
-# JokesSocial-app
 
 ## Технологии и инструменты
 
